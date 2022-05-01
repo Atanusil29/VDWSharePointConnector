@@ -1,0 +1,72 @@
+<Property title="Azure Tenant GUID" visible="1">
+	<Initial></Initial>
+	<Control>
+		<String />
+	</Control>
+</Property>
+<Property title="Azure Authentication Client GUID" visible="1">
+	<Initial></Initial>
+	<Control>
+		<String />
+	</Control>
+</Property>
+<Property title="Azure Authentication Client Secret" visible="1">
+	<Initial></Initial>
+	<Control>
+		<String />
+	</Control>
+</Property>
+<Property title="Azure Authentication Scope GUID" visible="1">
+	<Initial></Initial>
+	<Control>
+		<String />
+	</Control>
+</Property>
+<Property title="Sharepoint Tenant URL" visible="1">
+	<Initial></Initial>
+	<Control>
+		<String />
+	</Control>
+</Property>
+<Property title="Sharepoint Site Name" visible="1">
+	<Initial></Initial>
+	<Control>
+		<String />
+	</Control>
+</Property>
+<Property title="Sharepoint Library Name" visible="1">
+	<Initial></Initial>
+	<Control>
+		<String />
+	</Control>
+</Property>
+<Property title="Upload File Name" visible="1">
+	<Initial></Initial>
+	<Control>
+		<String />
+	</Control>
+</Property>
+<Property title="Sharepoint Document Router URL" visible="1">
+	<Initial></Initial>
+	<Control>
+		<String />
+	</Control>
+</Property>
+<Property title="SAP Company Code" visible="1">
+	<Initial></Initial>
+	<Control>
+		<String />
+	</Control>
+</Property>
+<Property title="SAP Document Type" visible="1">
+	<Initial></Initial>
+	<Control>
+		<String />
+	</Control>
+</Property>
+<Property title="SAP Account Number" visible="1">
+	<Initial></Initial>
+	<Control>
+		<String />
+	</Control>
+</Property>

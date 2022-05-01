@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<configuration>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	<property name="LOG_FILE" value="logs/SharepointConnector.log" />
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_FILE}</file>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	        <!-- daily rollover -->
+	        <fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.zip</fileNamePattern>
+	
+	        <!-- keep 30 days' worth of history capped at 3GB total size -->
+	        <maxHistory>30</maxHistory>
+	        <totalSizeCap>3GB</totalSizeCap>
+	    </rollingPolicy>
+		<append>true</append>
+		<encoder>
+			<pattern>%d [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<logger name="pro.delaware.eim.exstream.javaconnectors" level="info" />
+	
+	<root level="warn">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE" />
+	</root>
+</configuration>
